@@ -1,0 +1,95 @@
+
+/* no item 5 que pede para fazer com que o cursor mude caso o elemento seja clicável não é necessario pois tudo que deve ser clicável já tem seu cursor alterado, como a tag <a>*/
+
+
+body{
+    margin: 0;
+    background-color: lightgrey;
+}
+
+
+
+header{
+    padding: 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgb(21, 192, 135);
+   
+}
+
+
+@keyframes move {
+  
+  0% {transform: translateX(0);  color: green; transform: scale(1.5);}
+  25%{transform: translateX(-50px); color: red; }
+  50% {transform: translateX(50px);  color: orange;}
+  100% {transform: translateX(0); color: blue; transform: scale(1.5);}
+  
+}
+
+#titulo:hover{
+    animation: move 1s linear infinite;
+}
+
+a
+{
+    text-decoration: none;
+    margin: 40px;
+    color: black;
+    transition: 0.2s;
+}
+
+a:visited{
+    color: rgb(240, 0, 40);
+}
+
+a:hover{
+    color: rgb(209, 243, 16);
+}
+
+article{
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+#noticia1{
+    width: 30%;
+    height: 730px;
+    padding: 10px;
+    border: black double;
+    float: left;
+}
+
+#noticia1 iframe{
+    width: 100%;
+    height: 370px;
+
+}
+
+#noticia2{
+    width: 35.9%;
+    height: 730px;
+    padding: 10px;
+    border: black double;
+    float: left;
+}
+
+#noticia3{
+    width: 30%;
+    height: 730px;
+    padding: 10px;
+    border: black double;
+    float: right;
+}
+
+#noticia3 img{
+    width: 100%;
+    height: 450px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
